@@ -8,65 +8,22 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="side.css">
   <link rel="stylesheet" href="logincss.css">
+  <link rel="stylesheet" href="style.css">
 
   <title>Login</title>
 </head>
 
 <body>
   <section class="main">
-    <header class="header1">
-      <a class="logo" href="#"><img src="chaiBar head.png"></a>
+    <header class="header1" style="text-align: center;">
+      <a  href="#"><img class="logo" src="./logofoot.png" width="39%"></a>
      
-      <nav class="navbar ">
-        <div class="fix ">
-            <a class="a1" href="index.html">HOME</a>
-            <a class="a1" href="./about.html">ABOUT US</a>
-            <a class="a1" href="./menu.html">MENU</a>
-            <a class="a1" href="./franchize.html">FRANCHISE</a>
-            <a class="a1" href="./contact.html">CONTACT US</a>
-        </div>
-      </nav>
-      <nav class="mobile-nav">
-        <button id="menuBtn" onclick="toggleMenu()" >&#9776; MENU</button>
-        <div class="menu-items">
-            <a class="a1" href="index.html">HOME</a>
-            <a class="a1" href="./about.html">ABOUT US</a>
-            <a class="a1" href="./menu.html">MENU</a>
-            <a class="a1" href="./franchize.html">FRANCHISE</a>
-            <a class="a1" href="./contact.html">CONTACT US</a>
-        </div>
-    </nav>
+     
     </header>
     
   </section>
-  <script>
-    
-    function toggleMenu() {
 
-var menuItems = document.querySelector('.menu-items');
-if (menuItems.style.display === 'block') {
-    menuItems.style.display = 'none';
-} else {
-    menuItems.style.display = 'block';
-}
-}
-window.addEventListener('load', () => {
-      const loaderWrapper = document.querySelector('.loader-wrapper');
-      setTimeout(() => {
-        loaderWrapper.style.display = 'none';
-      }, 1500); // Hide after 3 seconds
-    });
-</script>
-<div class="loader-wrapper">
-  <img src="chaiBar head.png" alt="Avatar" width="40%">
-
-  <img src="./prelocader.gif" alt="Avatar" width="40%">
-
-        <div class="loader-title"> Tea is the second most consumed beverage on the planet – after Water.</div>
-
-</div>
 
 
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -101,51 +58,59 @@ window.addEventListener('load', () => {
 
   </div>
 
-  <footer class="site-footer">
-    <div class="container"> <img src="./chaiBar head.png" alt="">
+  <footer class="site-footer" >
+    <div class="white ">
+        <div class="container">
+            <img class="logo" src="./logofoot.png" alt="" />
 
-      <div class="row">
-        <div class="col-sm-12 col-md-4"><br>
-          <p class="text-justify">The Chai Bar in Canada offers a unique experience of authentic chai and specialty
-            beverages. Our mission is to provide our customers with high-quality beverages in a cozy and inviting
-            atmosphere.</p>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 data">
+                    <h6>DuLexe Dhaba</h6>
+                    <p class="text-center text-black">
+                        At Delux Dhaba, taste buds embark on a flavorful journey. Where culinary mastery meets rustic ambiance, inviting and warm.
+                        A dining experience that transcends mere meals, it's a celebration of culture and fusion.
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3 text-black">
+                    <h6>Explore</h6>
+                    Road-01, Block-B, West Canada
+                    <br />
+                    1234567890
+                    <br />
+                    Opening Time:
+                    <br />
+                    Mon-Sat: 10AM - 10PM
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
         </div>
 
-        <div class="col-xs-6 col-md-4" style="text-align: center;">
-          <!-- <p>Type your qoute here </p> -->
-          <img src="./chaiBar_favicon.png" class="footer_img" alt="">
+        <div class="container text-white " id="footmy">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12 util">
+                    <p class="copyright-text text-white">
+                        Copyright © 2024 All Rights Reserved by The <side>Dulexe</side> Dhaba.
+                        <br />
+                        <a href="https://utellitservices.com/">Designed By UTell IT services</a>
+                        <FontAwesomeIcon icon={faHeart} style="color: #ff0000;" />
+                    </p>
+                </div>
+            </div>
         </div>
-
-
-        <div class="col-xs-6 col-md-4">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="#">Menu</a></li>
-
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr>
     </div>
-    <div class="container">
-      <div class="row" style="text-align: center;">
-        <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
-          The <side>Chai</side> Bar. <br>
-          <a href="https://utellitservices.com/">Designed and Developed ByUTell IT services
-            <i class="fa fa-heart" style="color: red;"></i>
+</footer>
 
-          </a>
-        </p>
-
-
-
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>
