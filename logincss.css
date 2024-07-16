@@ -10,10 +10,10 @@ body,
  
 .login {
   position: relative;
-  height: 560px;
-  width: 405px;
+  width: 90%;
+  max-width: 600px;
   margin: auto ;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
 
   padding: 60px 60px;
@@ -68,7 +68,7 @@ body,
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0);
   overflow: hidden;
-  margin-top: 15px;
+  margin: 15px auto;
   transition: all 0.5s ease-in-out;
 }
 
