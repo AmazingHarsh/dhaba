@@ -163,7 +163,7 @@ function renderFoodItems() {
 
             // Add event listeners to delete and modify buttons
             deleteBtn.addEventListener('click', () => deleteItem(category,key, category + key));
-            modifyBtn.addEventListener('click', () => modifyItem(category, category+key, item.name, item.price, item.description));
+            modifyBtn.addEventListener('click', () => modifyItem(category,key, item.name, item.price, item.description));
 
             // Append buttons to delete and modify cells
             deleteCell.appendChild(deleteBtn);
